@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #generator {
+        width: 200px;
+        height: 200px;
+        border-color: blue;
+        border-style: dotted;
+        border-width: 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="generator"></div>
+
+    <input type="text" id="input--border__width" />
+
+    <script type="text/javascript">
+      document
+        .getElementById("input--border__width")
+        .addEventListener("keydown", (event) => {
+          console.log(document.getElementById("input--border__width").value);
+        });
+      //   let inputBorderWidth = document.getElementById("input--border__width");
+      //   console.log(inputBorderWidth);
+      //   let divGenerator = document.getElementById("generator");
+      //   inputBorderWidth.onkeypress = function () {
+      //     changeBorderWidthSize(inputBorderWidth.value);
+      //   };
+
+      //   function changeBorderWidthSize(valor) {
+      //     console.log(document.getElementById("input--border__width").value);
+      //     // divGenerator.style.borderWidth = `${inputBorderWidth.value}px`;
+      //   }
+    </script>
+  </body>
+</html>
