@@ -20,22 +20,27 @@
     <input type="text" id="input--border__width" />
 
     <script type="text/javascript">
-      document
-        .getElementById("input--border__width")
-        .addEventListener("keydown", (event) => {
-          console.log(document.getElementById("input--border__width").value);
-        });
-      //   let inputBorderWidth = document.getElementById("input--border__width");
-      //   console.log(inputBorderWidth);
-      //   let divGenerator = document.getElementById("generator");
-      //   inputBorderWidth.onkeypress = function () {
-      //     changeBorderWidthSize(inputBorderWidth.value);
-      //   };
+      let inputBorderWidth = document.getElementById("input--border__width");
+      let divGenerator = document.getElementById("generator");
+      inputBorderWidth.addEventListener("keyup", (event) => {
+        changeBorderWidthSize();
+      });
 
-      //   function changeBorderWidthSize(valor) {
-      //     console.log(document.getElementById("input--border__width").value);
-      //     // divGenerator.style.borderWidth = `${inputBorderWidth.value}px`;
-      //   }
+      function changeBorderWidthSize() {
+        let value = inputBorderWidth.value;
+        console.log(value);
+        const DEFAULT_WIDTH_VALUE = 1;
+        if (
+          value === undefined ||
+          value === null ||
+          value === 0 ||
+          value === ""
+        ) {
+          divGenerator.style.borderWidth = `${DEFAULT_WIDTH_VALUE}px`;
+        } else {
+          divGenerator.style.borderWidth = `${value}px`;
+        }
+      }
     </script>
   </body>
 </html>
