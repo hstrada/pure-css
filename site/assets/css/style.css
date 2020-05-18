@@ -1,3 +1,19 @@
+/* fonts */
+@font-face {
+  font-family: "QuickSandBold";
+  src: url("../fonts/Quicksand-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "QuickSandMedium";
+  src: url("../fonts/Quicksand-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "QuickSandRegular";
+  src: url("../fonts/Quicksand-Regular.ttf") format("truetype");
+}
+
 /* general configuration */
 * {
   margin: 0;
@@ -7,14 +23,28 @@
 }
 
 body {
-  width: 1200px;
   margin: 0 auto;
+  font-family: "QuickSandRegular";
+}
+
+/* general variables */
+
+:root {
+  --white-color: #ffffff;
+  --light-gray-color: #f3f3f3;
+  --gray-color: #595959;
+  --dark-gray-color: #2b2b2b;
+  --primary-color: #661dba;
+  --secondary-color: #e00b92;
+  --tertiary-color: #ff2867;
+  --font-regular: "QuickSandRegular";
+  --font-medium: "QuickSandMedium";
+  --font-bold: "QuickSandBold";
 }
 
 /* general display */
-
 .container {
-  width: 100%;
+  width: 90vw;
   display: flex;
   flex-direction: column;
 }
@@ -25,6 +55,70 @@ body {
 }
 
 .column {
+}
+
+/* header */
+header {
+  width: 100%;
+  height: 450px;
+  background-image: radial-gradient(
+      circle at 52% 94%,
+      rgba(169, 169, 169, 0.04) 0%,
+      rgba(169, 169, 169, 0.04) 50%,
+      rgba(199, 199, 199, 0.04) 50%,
+      rgba(199, 199, 199, 0.04) 100%
+    ),
+    radial-gradient(
+      circle at 96% 98%,
+      rgba(61, 61, 61, 0.04) 0%,
+      rgba(61, 61, 61, 0.04) 50%,
+      rgba(201, 201, 201, 0.04) 50%,
+      rgba(201, 201, 201, 0.04) 100%
+    ),
+    radial-gradient(
+      circle at 93% 97%,
+      rgba(227, 227, 227, 0.04) 0%,
+      rgba(227, 227, 227, 0.04) 50%,
+      rgba(145, 145, 145, 0.04) 50%,
+      rgba(145, 145, 145, 0.04) 100%
+    ),
+    radial-gradient(
+      circle at 79% 52%,
+      rgba(245, 245, 245, 0.04) 0%,
+      rgba(245, 245, 245, 0.04) 50%,
+      rgba(86, 86, 86, 0.04) 50%,
+      rgba(86, 86, 86, 0.04) 100%
+    ),
+    linear-gradient(90deg, rgb(102, 29, 186), rgb(224, 11, 146));
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 25px 60px 0px 60px;
+}
+
+.header--logo {
+  font-family: var(--font-bold);
+  font-size: 42px;
+  color: var(--white-color);
+}
+
+.header--menu {
+  font-family: var(--font-medium);
+  color: var(--white-color);
+  font-size: 24px;
+}
+
+.header--menu ul {
+  display: flex;
+}
+
+.header--menu ul li {
+  list-style-type: none;
+  margin-left: 56px;
+}
+
+.header--menu ul li:not(:first-child) {
+  opacity: 0.5;
 }
 
 #generator--border {
