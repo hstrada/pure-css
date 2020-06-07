@@ -46,6 +46,7 @@ body {
 :root {
   --white-color: #ffffff;
   --light-gray-color: #f3f3f3;
+  --gray-color-bg: #f9f9f9;
   --gray-color: #595959;
   --dark-gray-color: #2b2b2b;
   --primary-color: #661dba;
@@ -72,11 +73,16 @@ h2 {
   font-family: "QuickSandBold";
   font-size: 48px;
   color: var(--dark-gray-color);
+  margin-bottom: 48px;
 }
 
 h2 svg {
   margin-bottom: 11px;
   margin-right: 3px;
+}
+
+section {
+  padding: 60px 100px 60px 100px;
 }
 
 /**
@@ -172,20 +178,11 @@ header {
 
 /**
  *
- * MAIN
- *
- */
-main {
-  padding: 0px 100px 0px 100px;
-}
-
-/**
- *
  * INFO
  *
  */
 #info {
-  margin-top: -110px;
+  margin-top: -170px;
 }
 
 #info span {
@@ -237,9 +234,9 @@ main {
  *
  */
 
-#generator {
+/* #generator {
   margin-top: 48px;
-}
+} */
 
 #generator--border {
   width: 200px;
@@ -247,6 +244,15 @@ main {
   border-color: blue;
   border-style: dotted;
   border-width: 2px;
+}
+
+/**
+ *
+ * PROPERTIES
+ *
+ */
+#properties {
+  background-color: var(--gray-color-bg);
 }
 
 /**
@@ -266,7 +272,7 @@ main {
 }
 
 .about--text {
-  padding: 60px 0px 0px 140px;
+  padding: 0px 0px 0px 140px;
   width: 30%;
 }
 
