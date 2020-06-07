@@ -25,6 +25,13 @@
 body {
   margin: 0 auto;
   font-family: "QuickSandRegular";
+  display: flex;
+  flex-direction: column;
+}
+
+p {
+  font-size: 18px;
+  font-family: "QuickSandRegular";
 }
 
 /* general variables */
@@ -90,22 +97,21 @@ header {
       rgba(86, 86, 86, 0.04) 100%
     ),
     linear-gradient(90deg, rgb(102, 29, 186), rgb(224, 11, 146));
+  padding: 25px 60px 0px 60px;
+  -webkit-box-shadow: 0px 6px 14px -3px rgba(148, 148, 148, 1);
+  -moz-box-shadow: 0px 6px 14px -3px rgba(148, 148, 148, 1);
+  box-shadow: 0px 6px 14px -3px rgba(148, 148, 148, 1);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 25px 60px 0px 60px;
-}
-
-.header--logo {
-  font-family: var(--font-bold);
-  font-size: 42px;
-  color: var(--white-color);
+  z-index: -2;
 }
 
 .header--menu {
   font-family: var(--font-medium);
   color: var(--white-color);
   font-size: 24px;
+  padding-top: 12px;
 }
 
 .header--menu ul {
@@ -117,9 +123,70 @@ header {
   margin-left: 56px;
 }
 
+.header--menu ul li:first-child svg {
+  margin-bottom: 6px;
+  margin-right: 5px;
+}
+
 .header--menu ul li:not(:first-child) {
   opacity: 0.5;
 }
+
+/* MAIN */
+main {
+  padding: 0px 60px 0px 60px;
+}
+
+#info {
+  margin-top: -110px;
+}
+
+#info span {
+  font-family: "QuickSandBold";
+}
+
+.gradient-box {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  width: 400px;
+  height: 190px;
+  position: relative;
+  box-sizing: border-box;
+  color: #000;
+  background: #fff;
+  background-clip: border-box;
+  background-clip: padding-box;
+  border: solid 5px transparent;
+  border-radius: 10px 40px 40px 40px;
+  text-align: center;
+  padding: 30px 40px 30px 40px;
+}
+
+.gradient-box:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  margin: -7px;
+  /* !importanté */
+  border-radius: inherit;
+  /* !importanté */
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(rgb(102, 29, 186)),
+    to(rgb(224, 11, 146))
+  );
+  background: linear-gradient(to right, rgb(102, 29, 186), rgb(224, 11, 146));
+}
+
+/* generator */
 
 #generator--border {
   width: 200px;
