@@ -77,22 +77,93 @@
         <div class="gradient-box">
           <p>
             You can choose between the following properties: <br />
-            <span>style</span>, <span>width</span>, <span>color</span> & <span>sides</span>.
+            <span>style</span>, <span>width</span>, <span>color</span> &
+            <span>sides</span>.
           </p>
         </div>
       </section>
-      <section id="generator" class="row"></section>
-      <section id="properties" class="row"></section>
-      <section id="about" class="row"></section>
-    </main>
-    <footer></footer>
-    <div id="generator--border"></div>
+      <section id="generator" class="row">
+        <h2>
+          <svg
+            width="125"
+            height="5"
+            viewBox="0 0 125 5"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect x="25" width="100" height="5" rx="2.5" fill="#F3F3F3" />
+            <rect width="20" height="5" rx="2.5" fill="#661DBA" />
+          </svg>
 
-    <input type="text" id="input--border__width" />
+          Generator
+        </h2>
+        <div>
+          <div></div>
+          <div>
+            <div id="generator--border"></div>
+
+            <input type="text" id="input--border__width" />
+          </div>
+        </div>
+      </section>
+      <section id="properties" class="row">
+        <h2>
+          <svg
+            width="125"
+            height="5"
+            viewBox="0 0 125 5"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect x="25" width="100" height="5" rx="2.5" fill="#F3F3F3" />
+            <rect width="20" height="5" rx="2.5" fill="#E00B92" />
+          </svg>
+
+          Properties
+        </h2>
+      </section>
+      <section id="about" class="row">
+        <h2>
+          <svg
+            width="125"
+            height="5"
+            viewBox="0 0 125 5"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect x="25" width="100" height="5" rx="2.5" fill="#F3F3F3" />
+            <rect width="20" height="5" rx="2.5" fill="#661DBA" />
+          </svg>
+
+          About
+        </h2>
+        <div class="about--information">
+          <div class="about--text">
+            <p>
+              We are <span>passionate</span> about technology and we love to
+              <span>share</span> some knowlodge with you guys.
+            </p>
+            <p>
+              Feel free to watch some of our projects on <span>GitHub</span> and
+              contact us on <span>LinkedIn</span>.
+            </p>
+          </div>
+          <div class="about--thanks">
+            <p>
+              thanks for visiting us <br />
+              <span class="span--first">Helena</span> <span class="span--middle">&</span> <span>Matheus</span>
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p><span>purê_css</span> - todos os direitos reservados.</p>
+    </footer>
 
     <script type="text/javascript">
       let inputBorderWidth = document.getElementById("input--border__width");
-      let divGenerator = document.getElementById("generator");
+      let divGenerator = document.getElementById("generator--border");
       inputBorderWidth.addEventListener("keyup", (event) => {
         changeBorderWidthSize();
       });

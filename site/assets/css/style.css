@@ -1,4 +1,8 @@
-/* fonts */
+/**
+ *
+ * FONTS
+ *
+ */
 @font-face {
   font-family: "QuickSandBold";
   src: url("../fonts/Quicksand-Bold.ttf") format("truetype");
@@ -14,7 +18,11 @@
   src: url("../fonts/Quicksand-Regular.ttf") format("truetype");
 }
 
-/* general configuration */
+/**
+ *
+ * GENERAL CONFIGURATION 
+ *
+ */
 * {
   margin: 0;
   padding: 0;
@@ -29,12 +37,11 @@ body {
   flex-direction: column;
 }
 
-p {
-  font-size: 18px;
-  font-family: "QuickSandRegular";
-}
-
-/* general variables */
+/**
+ *
+ * GENERAL VARIABLES 
+ *
+ */
 
 :root {
   --white-color: #ffffff;
@@ -49,22 +56,53 @@ p {
   --font-bold: "QuickSandBold";
 }
 
-/* general display */
+/**
+ *
+ * COMMON CONFIGURATION
+ *
+ */
+
+p {
+  font-size: 18px;
+  font-family: "QuickSandRegular";
+}
+
+h2 {
+  /* Generator */
+  font-family: "QuickSandBold";
+  font-size: 48px;
+  color: var(--dark-gray-color);
+}
+
+h2 svg {
+  margin-bottom: 11px;
+  margin-right: 3px;
+}
+
+/**
+ *
+ * GENERAL DISPLAY 
+ *
+ */
 .container {
-  width: 90vw;
+  width: 100%;
   display: flex;
   flex-direction: column;
 }
 
 .row {
   flex-direction: row;
-  height: 400px;
+  min-height: 400px;
 }
 
 .column {
 }
 
-/* header */
+/**
+ *
+ * HEADER
+ *
+ */
 header {
   width: 100%;
   height: 450px;
@@ -97,7 +135,7 @@ header {
       rgba(86, 86, 86, 0.04) 100%
     ),
     linear-gradient(90deg, rgb(102, 29, 186), rgb(224, 11, 146));
-  padding: 25px 60px 0px 60px;
+  padding: 25px 100px 0px 100px;
   -webkit-box-shadow: 0px 6px 14px -3px rgba(148, 148, 148, 1);
   -moz-box-shadow: 0px 6px 14px -3px rgba(148, 148, 148, 1);
   box-shadow: 0px 6px 14px -3px rgba(148, 148, 148, 1);
@@ -132,11 +170,20 @@ header {
   opacity: 0.5;
 }
 
-/* MAIN */
+/**
+ *
+ * MAIN
+ *
+ */
 main {
-  padding: 0px 60px 0px 60px;
+  padding: 0px 100px 0px 100px;
 }
 
+/**
+ *
+ * INFO
+ *
+ */
 #info {
   margin-top: -110px;
 }
@@ -173,9 +220,7 @@ main {
   left: 0;
   z-index: -1;
   margin: -7px;
-  /* !importanté */
   border-radius: inherit;
-  /* !importanté */
   background: -webkit-gradient(
     linear,
     left top,
@@ -186,7 +231,15 @@ main {
   background: linear-gradient(to right, rgb(102, 29, 186), rgb(224, 11, 146));
 }
 
-/* generator */
+/**
+ *
+ * GENERATOR
+ *
+ */
+
+#generator {
+  margin-top: 48px;
+}
 
 #generator--border {
   width: 200px;
@@ -194,4 +247,125 @@ main {
   border-color: blue;
   border-style: dotted;
   border-width: 2px;
+}
+
+/**
+ *
+ * ABOUT
+ *
+ */
+.about--information {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.about--information p {
+  line-height: 1.6;
+}
+
+.about--text {
+  padding: 60px 0px 0px 140px;
+  width: 30%;
+}
+
+@media only screen and (max-width: 768px) {
+  .about--text {
+    width: 100%;
+  }
+}
+
+.about--text p:first-child {
+  margin-bottom: 20px;
+}
+
+.about--text p span {
+  font-family: "QuickSandBold";
+}
+
+.about--thanks {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  width: 400px;
+  height: 190px;
+  position: relative;
+  box-sizing: border-box;
+  color: #000;
+  background: #fff;
+  background-clip: border-box;
+  background-clip: padding-box;
+  border: solid 5px transparent;
+  border-radius: 10px 40px 40px 40px;
+  text-align: center;
+  padding: 30px 40px 30px 40px;
+  margin-right: 250px;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.about--thanks:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  margin: -7px;
+  border-radius: inherit;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(rgb(102, 29, 186)),
+    to(rgb(224, 11, 146))
+  );
+  background: linear-gradient(to right, rgb(102, 29, 186), rgb(224, 11, 146));
+}
+
+.about--thanks p {
+  color: #808080;
+}
+
+.span--middle {
+  color: #808080;
+}
+
+.about--thanks p span {
+  font-family: "QuickSandBold";
+}
+
+.span--first {
+  color: var(--primary-color);
+}
+
+.about--thanks p span:last-child {
+  color: var(--secondary-color);
+}
+
+/**
+ *
+ * FOOTER
+ *
+ */
+
+footer {
+  width: 100%;
+  height: 55px;
+  background-color: var(--light-gray-color);
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+footer p {
+  font-size: 16px;
+}
+
+footer span {
+  font-family: "QuickSandBold";
 }
