@@ -276,9 +276,13 @@ header {
   width: 30%;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
   .about--text {
     width: 100%;
+  }
+  .about--thanks {
+    margin-left: 140px;
+    margin-right: 0px;
   }
 }
 
