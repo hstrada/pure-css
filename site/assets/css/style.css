@@ -234,9 +234,50 @@ header {
  *
  */
 
-/* #generator {
-  margin-top: 48px;
-} */
+.generator--data {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+}
+
+.generator--data p {
+  margin-bottom: 15px;
+}
+
+.generator--data_width {
+  width: 30%;
+}
+
+.slider--width {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 10px;
+  background: var(--light-gray-color);
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+}
+
+.slider--width:hover {
+  opacity: 1;
+}
+
+.slider--width::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: var(--primary-color);
+  cursor: pointer;
+}
+
+.slider--width::-moz-range-thumb {
+  width: 10px;
+  height: 25px;
+  background: var(--primary-color);
+  cursor: pointer;
+}
 
 #generator--border {
   width: 200px;
