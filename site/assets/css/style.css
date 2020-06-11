@@ -236,7 +236,6 @@ header {
 
 .generator--data {
   display: flex;
-  flex: 1;
   justify-content: space-between;
 }
 
@@ -244,8 +243,29 @@ header {
   margin-bottom: 15px;
 }
 
-.generator--data_width {
-  width: 30%;
+.generator--data_sizes {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.generator--data_result {
+  display: flex;
+  flex: 2;
+  flex-direction: column;
+}
+
+.generator--data_sizes-radius {
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+}
+
+.generator--data_sizes-width {
+  width: 70%;
+  display: flex;
+  flex-direction: row;
 }
 
 .slider--width {
@@ -280,10 +300,10 @@ header {
 }
 
 #generator--border {
-  width: 200px;
-  height: 200px;
-  border-color: blue;
-  border-style: dotted;
+  width: 400px;
+  height: 400px;
+  border-color: var(--primary-color);
+  border-style: solid;
   border-width: 2px;
 }
 
