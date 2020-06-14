@@ -12,8 +12,6 @@
 - 👨‍💻️ [Technologies Used](#%EF%B8%8F-technologies-used)
 - 📦️ [How to install the project](#%EF%B8%8F-how-to-install-the-project)
 - 🤔️ [How can you contribute?](#%EF%B8%8F-how-can-you-contribute)
-- :heart_eyes: [Releases](#heart_eyes-releases)
-- :floppy_disk: [Other _codecafe repositories](#floppy_disk-others-_codecafes-repositories)
  
 ## :rocket: Project Summary
 
