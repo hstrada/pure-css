@@ -1,18 +1,11 @@
 <p align="center">
-  <img src=".github/Logo.png"/>
-	
+ purê_css
   <p align="center">
-  FrontEnd app to find cafeterias to code, meet new programmers and, for sure, drink coffe!
+  FrontEnd app to generate border radius css style.
   </p>
   
 </p>
 
-<p align="center">
-  <a href="https://www.linkedin.com/in/mathpsantos/">
-    <img alt="Made by coffe lovers" src="https://img.shields.io/badge/made%20by-Coffe Lovers-%2304D361?color=yellow">
-  </a>
-</p>
- 
 # Index
 
 - :rocket: [Project Summary](#rocket-project-summary)
@@ -24,9 +17,7 @@
  
 ## :rocket: Project Summary
 
-FrontEnd app to find cafeterias to code, meet new programmers and, for sure, drink coffe!
-
-> Made with only learning purposes!
+CSS Border Generator
  
 ## 👨‍💻️ Technologies Used
 
@@ -34,53 +25,38 @@ This project was developed using the technologies bellow:
   
 ### FrontEnd
 
-  - [React](https://pt-br.reactjs.org/)
-  - [TypeScript](https://www.typescriptlang.org/)
+  - [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
+  - [JavaScript](https://developer.mozilla.org/pt-BR/docs/Aprender/JavaScript)
+  - [HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
   
-### Dependencies
-
-  - [Styled Components](https://styled-components.com/)
-  - [React Router](https://reacttraining.com/react-router/web)
-  - [i18next](https://www.i18next.com/)
-  - [Jest](https://jestjs.io/)
-  - [Styled-System](https://styled-system.com/)
-
-### Code patterns
-
-  - [ESLint](https://eslint.org/)
-  - [Husky](https://github.com/typicode/husky)
-
 ### IDE
 
   - [Visual Studio Code](https://code.visualstudio.com/)
 
 ---
  
-## 📦️ How to install the project
+## 📦️ How to run the project
 
 To clone the project, use the commands bellow:
 
 ```bash
   # Clone the repository
-  ❯ git clone https://github.com/hstrada/_codecafe-frontend.git
+  ❯ git clone https://github.com/hstrada/pure-css.git
 
   # Enter directory
-  ❯ cd _codecafe-frontend
+  ❯ cd pure-css
 ```
 
 ### FrontEnd
 
-**Emulate in IOS**
+**Chrome, Firefox, IE, Edge, Safari or any other browser**
 
 ```bash
   # Enter frontend directory
-  > cd code-cafe
+  > cd pure-css
 
-  # Install the dependencies
-  ❯ yarn
-
-  # Start the project
-  ❯ yarn start
+  # Double click on main file
+  ❯ index.html
 ```
 
 ---
@@ -95,19 +71,7 @@ To clone the project, use the commands bellow:
    - `$ git push origin my_feature`
 
 ---
-
-## :heart_eyes: Releases
-
-https://github.com/hstrada/_codecafe-frontend/releases
-
----
-
-## :floppy_disk: Others **_codecafe**'s repositories
-
-- [Backend](https://github.com/hstrada/_codecafe-backend)
-- [Mobile](https://github.com/hstrada/_codecafe-mobile)
----
  
 <h4 align="center">
-  Made with :yellow_heart: by <a href="https://www.linkedin.com/in/mathpsantos/">Matheus</a>, <a href="https://www.linkedin.com/in/helenastrada/">Helena</a> and <a href="https://www.linkedin.com/in/saulo-santos-330a3571/">Saulo</a>! 
+  Made with :yellow_heart: by <a href="https://www.linkedin.com/in/mathpsantos/">Matheus</a> and <a href="https://www.linkedin.com/in/helenastrada/">Helena</a>! 
 </h4>
