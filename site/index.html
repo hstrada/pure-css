@@ -71,6 +71,7 @@
           <li>about</li>
         </ul>
       </div>
+      <div class="header--overlay"></div>
     </header>
     <main class="container">
       <section id="info">
@@ -109,7 +110,13 @@
                 class="slider--width"
                 id="border--size__radius"
               />
-              <p><span id="border--size__radius-value"></span></p>
+              <input
+                type="text"
+                id="border--size__radius-value"
+                min="1"
+                max="100"
+                value="1"
+              />
             </div>
             <p>border-width</p>
             <div class="generator--data_sizes-width">
@@ -121,15 +128,13 @@
                 class="slider--width"
                 id="border--size__width"
               />
-              <p>
-                <input
-                  type="text"
-                  id="border--size__width-value"
-                  min="1"
-                  max="100"
-                  value="1"
-                />
-              </p>
+              <input
+                type="text"
+                id="border--size__width-value"
+                min="1"
+                max="100"
+                value="1"
+              />
             </div>
           </div>
           <div class="generator--data_result">
@@ -193,57 +198,9 @@
       <p><span>purê_css</span> - todos os direitos reservados.</p>
     </footer>
 
-    <script type="text/javascript" src="assets/js/generator.js"></script>
-
-    <script type="text/javascript">
-      // generator
-      let divGenerator = document.getElementById("generator--border");
-
-      // input border width
-      let inputBorderWidth = document.getElementById(
-        "border--size__width-value"
-      );
-      inputBorderWidth.addEventListener("keyup", (event) => {
-        changeBorderWidthSize();
-      });
-
-      var sliderWidth = document.getElementById("border--size__width");
-
-      inputBorderWidth.value = sliderWidth.value;
-
-      sliderWidth.oninput = function () {
-        inputBorderWidth.value = this.value;
-        divGenerator.style.borderWidth = `${this.value}px`;
-      };
-
-      function changeBorderWidthSize() {
-        let value = inputBorderWidth.value;
-        const DEFAULT_WIDTH_VALUE = 1;
-        if (
-          value === undefined ||
-          value === null ||
-          value === 0 ||
-          value === ""
-        ) {
-          divGenerator.style.borderWidth = `${DEFAULT_WIDTH_VALUE}px`;
-        } else {
-          sliderWidth.value = inputBorderWidth.value;
-          divGenerator.style.borderWidth = `${value}px`;
-        }
-      }
-    </script>
-
-    <script>
-      var slider = document.getElementById("border--size__radius");
-      var output = document.getElementById("border--size__radius-value");
-
-      output.innerHTML = slider.value;
-
-      slider.oninput = function () {
-        output.innerHTML = this.value;
-        divGenerator.style.borderRadius = `${this.value}px`;
-      };
-    </script>
-    <script></script>
+    <script type="text/javascript" src="assets/js/global.js"></script>
+    <script type="text/javascript" src="assets/js/borderRadius.js"></script>
+    <script type="text/javascript" src="assets/js/borderWidth.js"></script>
+    <!--     <script type="text/javascript" src="assets/js/generator.js"></script> -->
   </body>
 </html>
