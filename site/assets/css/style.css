@@ -342,6 +342,17 @@ header {
   border-width: 2px;
 }
 
+.border--style {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+/* color */
+.generator--data_color-value {
+  width: 70% !important;
+  margin-left: 0px !important;
+}
+
 /**
  *
  * PROPERTIES

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>purê - css | border generator</title>
     <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/elements.css" />
   </head>
   <body>
     <header>
@@ -100,41 +101,168 @@
         </h2>
         <div class="generator--data">
           <div class="generator--data_sizes">
-            <p>border-radius</p>
-            <div class="generator--data_sizes-radius">
-              <input
-                type="range"
-                min="1"
-                max="200"
-                value="1"
-                class="slider--width"
-                id="border--size__radius"
-              />
-              <input
-                type="text"
-                id="border--size__radius-value"
-                min="1"
-                max="100"
-                value="1"
-              />
+            <div>
+              <p>border-radius</p>
+              <div class="generator--data_sizes-radius">
+                <input
+                  type="range"
+                  min="1"
+                  max="200"
+                  value="1"
+                  class="slider--width"
+                  id="border--size__radius"
+                />
+                <input
+                  type="text"
+                  id="border--size__radius-value"
+                  min="1"
+                  max="100"
+                  value="1"
+                />
+              </div>
             </div>
-            <p>border-width</p>
-            <div class="generator--data_sizes-width">
-              <input
-                type="range"
-                min="1"
-                max="100"
-                value="1"
-                class="slider--width"
-                id="border--size__width"
-              />
-              <input
-                type="text"
-                id="border--size__width-value"
-                min="1"
-                max="100"
-                value="1"
-              />
+            <div>
+              <p>border-width</p>
+              <div class="generator--data_sizes-width">
+                <input
+                  type="range"
+                  min="1"
+                  max="100"
+                  value="1"
+                  class="slider--width"
+                  id="border--size__width"
+                />
+                <input
+                  type="text"
+                  id="border--size__width-value"
+                  min="1"
+                  max="100"
+                  value="1"
+                />
+              </div>
+            </div>
+            <div>
+              <p>border-color</p>
+              <div class="generator--data_color">
+                <input
+                  class="generator--data_color-value"
+                  type="text"
+                  id="border--color-value"
+                  placeholder="#661dba"
+                  maxlength="9"
+                />
+              </div>
+            </div>
+            <div class="border--style">
+              <p>border-style</p>
+              <!-- none|hidden|dotted|dashed|solid|double|groove|ridge|inset|outset|initial|inherit; -->
+              <div class="select-box">
+                <div class="select-box__current" tabindex="0">
+                  <div class="select-box__value">
+                    <input
+                      class="select-box__input"
+                      type="radio"
+                      id="0"
+                      value="1"
+                      name="Ben"
+                      checked="checked"
+                    />
+                    <p class="select-box__input-text">solid</p>
+                  </div>
+                  <div class="select-box__value">
+                    <input
+                      class="select-box__input"
+                      type="radio"
+                      id="1"
+                      value="2"
+                      name="Ben"
+                      checked="checked"
+                    />
+                    <p class="select-box__input-text">dotted</p>
+                  </div>
+                  <div class="select-box__value">
+                    <input
+                      class="select-box__input"
+                      type="radio"
+                      id="2"
+                      value="3"
+                      name="Ben"
+                      checked="checked"
+                    />
+                    <p class="select-box__input-text">dashed</p>
+                  </div>
+                  <div class="select-box__value">
+                    <input
+                      class="select-box__input"
+                      type="radio"
+                      id="3"
+                      value="4"
+                      name="Ben"
+                      checked="checked"
+                    />
+                    <p class="select-box__input-text">double</p>
+                  </div>
+                  <div class="select-box__value">
+                    <input
+                      class="select-box__input"
+                      type="radio"
+                      id="4"
+                      value="5"
+                      name="Ben"
+                      checked="checked"
+                    />
+                    <p class="select-box__input-text">groove</p>
+                  </div>
+                  <img
+                    class="select-box__icon"
+                    src="http://cdn.onlinewebfonts.com/svg/img_295694.svg"
+                    alt="Arrow Icon"
+                    aria-hidden="true"
+                  />
+                </div>
+                <ul class="select-box__list">
+                  <li>
+                    <label
+                      class="select-box__option"
+                      for="0"
+                      aria-hidden="aria-hidden"
+                      >solid</label
+                    >
+                  </li>
+                  <li>
+                    <label
+                      class="select-box__option"
+                      for="1"
+                      aria-hidden="aria-hidden"
+                      >dotted</label
+                    >
+                  </li>
+                  <li>
+                    <label
+                      class="select-box__option"
+                      for="2"
+                      aria-hidden="aria-hidden"
+                      >dashed</label
+                    >
+                  </li>
+                  <li>
+                    <label
+                      class="select-box__option"
+                      for="3"
+                      aria-hidden="aria-hidden"
+                      >double</label
+                    >
+                  </li>
+                  <li>
+                    <label
+                      class="select-box__option"
+                      for="4"
+                      aria-hidden="aria-hidden"
+                      >groove</label
+                    >
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
           <div class="generator--data_result">
@@ -201,6 +329,8 @@
     <script type="text/javascript" src="assets/js/global.js"></script>
     <script type="text/javascript" src="assets/js/borderRadius.js"></script>
     <script type="text/javascript" src="assets/js/borderWidth.js"></script>
+    <script type="text/javascript" src="assets/js/borderStyle.js"></script>
+    <script type="text/javascript" src="assets/js/borderColor.js"></script>
     <!--     <script type="text/javascript" src="assets/js/generator.js"></script> -->
   </body>
 </html>
