@@ -269,8 +269,7 @@
             <div id="generator--border"></div>
           </div>
           <div class="generator--data_code">
-            <span id="generator--code">
-            </span>
+            <span id="generator--code"> </span>
           </div>
         </div>
       </section>
@@ -289,6 +288,56 @@
 
           Properties
         </h2>
+        <div>
+          <div class="slideshow-container">
+            <div class="mySlides">
+              <h3 class="section--properties-title">
+                border-width
+              </h3>
+              <p class="section--properties-description">
+                border-width defines the size of the four borders.
+                <br />
+                you can use: em, px, pt, cm, etc.
+              </p>
+            </div>
+            <div class="mySlides">
+              <h3 class="section--properties-title">
+                border-radius
+              </h3>
+              <p class="section--properties-description">
+                border-radius defines the radius of the corners.
+              </p>
+            </div>
+            <div class="mySlides">
+              <h3 class="section--properties-title">
+                border-style
+              </h3>
+              <p class="section--properties-description">
+                border-styles defines the style of the border you want to show.
+                <br />
+                you can set: solid, dotted, dashed, double, groove, ridge,
+                inset, outset, none, hidden, mix.
+              </p>
+            </div>
+            <div class="mySlides">
+              <h3 class="section--properties-title">
+                border-color
+              </h3>
+              <p class="section--properties-description">
+                border-color defines the color of the four borders.
+                <br />
+                you can use: rgb, hex, name ('purple'), hsl or transparent.
+              </p>
+            </div>
+          </div>
+
+          <div class="dot-container">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+          </div>
+        </div>
       </section>
       <section id="about" class="row">
         <h2>
@@ -331,6 +380,7 @@
     </footer>
 
     <script type="text/javascript" src="assets/js/global.js"></script>
+    <script type="text/javascript" src="assets/js/loadProperties.js"></script>
     <script type="text/javascript" src="assets/js/borderRadius.js"></script>
     <script type="text/javascript" src="assets/js/borderWidth.js"></script>
     <script type="text/javascript" src="assets/js/borderStyle.js"></script>

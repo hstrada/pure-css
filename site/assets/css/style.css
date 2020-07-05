@@ -81,6 +81,11 @@ h2 svg {
   margin-right: 3px;
 }
 
+h3 {
+  font-size: 24px;
+  font-family: "QuickSandRegular";
+}
+
 section {
   padding: 60px 100px 60px 100px;
 }
@@ -372,6 +377,72 @@ header {
  */
 #properties {
   background-color: var(--gray-color-bg);
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  min-height: 130px;
+}
+
+.slideshow-container {
+  padding-top: 20px;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+  /* text-align: center; */
+  padding: 20px 20px 20px 0px;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 10px;
+  width: 20px;
+  margin: 0 2px;
+  background-color: rgba(102, 29, 186, 0.3);
+  border-radius: 20px;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active {
+  background-color: var(--primary-color);
+  border-radius: 20px;
+  width: 45px;
+}
+
+.dot:hover {
+  background-color: var(--primary-color);
+}
+
+.section--properties-description {
+  margin-top: 20px;
 }
 
 /**
