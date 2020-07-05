@@ -286,14 +286,26 @@ header {
 
 .generator--data_result {
   display: flex;
-  flex: 2;
+  flex: 1;
   flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.generator--data_code {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .generator--data_sizes-radius {
   width: 70%;
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 
 .generator--data_sizes-width {
