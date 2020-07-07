@@ -6,6 +6,9 @@
     <title>purê - css | border generator</title>
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/elements.css" />
+
+    <script type="text/javascript" src="./assets/i18n/pt-br.json"></script>
+    <script type="text/javascript" src="./assets/i18n/en.json"></script>
   </head>
   <body>
     <header>
@@ -68,8 +71,8 @@
             </svg>
             generator
           </li>
-          <li>properties</li>
-          <li>about</li>
+          <li data-i18n="header.menu.properties">properties</li>
+          <li data-i18n="header.menu.about">about</li>
         </ul>
       </div>
       <div class="header--overlay"></div>
@@ -77,15 +80,15 @@
     <main class="container">
       <section id="info">
         <div class="gradient-box">
-          <p>
+          <p data-i18n="header.description">
             You can choose between the following properties: <br />
             <span>style</span>, <span>width</span>, <span>color</span> &
-            <span>sides</span>.
+            <span>radius</span>.
           </p>
         </div>
       </section>
       <section id="generator" class="row">
-        <h2>
+        <h2 data-i18n="title">
           <svg
             width="125"
             height="5"
@@ -379,6 +382,7 @@
       <p><span>purê_css</span> - todos os direitos reservados.</p>
     </footer>
 
+    <script type="text/javascript" src="assets/js/i18n.js"></script>
     <script type="text/javascript" src="assets/js/global.js"></script>
     <script type="text/javascript" src="assets/js/loadProperties.js"></script>
     <script type="text/javascript" src="assets/js/borderRadius.js"></script>

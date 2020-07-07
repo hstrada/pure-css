@@ -195,6 +195,7 @@ header {
   color: var(--white-color);
   font-size: 24px;
   padding-top: 12px;
+  display: block;
 }
 
 .header--menu ul {
