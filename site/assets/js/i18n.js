@@ -41,11 +41,6 @@ function loadLanguage(language) {
       } else {
         for (var prop in theObject) {
           console.log(prop + ": " + theObject[prop]);
-          if (prop == "id") {
-            if (theObject[prop] == 1) {
-              return theObject;
-            }
-          }
           if (
             theObject[prop] instanceof Object ||
             theObject[prop] instanceof Array
@@ -60,26 +55,7 @@ function loadLanguage(language) {
       return result;
     }
 
-    console.log(getObject(i18n));
+    getObject(i18n);
 
-    // Object.keys(i18n).forEach(function (k) {
-    //   console.log(k);
-    //   var entry = i18n[k];
-    //   Object.keys(entry).forEach(function (a) {
-    //     console.log(a);
-    //   });
-    // });
-
-    // function i18nToJSON(i18nstring) {
-    //   var i18n = {};
-    //   i18n.map = function (lang, obj) {
-    //     return JSON.stringify(obj);
-    //   };
-    //   return eval(i18nstring);
-    // }
-
-    // var x = 'i18n.map("it", {a: "123", b: "456"});';
-    // var JSONstring = i18nToJSON(x);
-    // console.log(JSONstring);
   });
 }
