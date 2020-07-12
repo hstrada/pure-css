@@ -4,7 +4,7 @@
       "properties" : "properties",
       "about" : "about"
     },
-    "description" : "Texto"
+    "description" : "description"
   },
-  "title" : "Hello"
+  "title" : "generator"
 })

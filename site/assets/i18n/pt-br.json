@@ -1,10 +1,10 @@
 (ptbr = {
   "header": {
     "menu": {
-      "properties" : "properties",
-      "about" : "about"
+      "properties" : "propriedades",
+      "about" : "sobre"
     },
     "description" : "Texto"
   },
-  "title" : "Hello"
+  "title" : "Gerador"
 })
