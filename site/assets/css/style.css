@@ -277,6 +277,8 @@ header {
 .generator--data {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  flex: 1 1 300px;
 }
 
 .generator--data p {
@@ -285,14 +287,14 @@ header {
 
 .generator--data_sizes {
   display: flex;
-  flex: 1;
+  flex: 1 1 auto;
   flex-direction: column;
   flex-wrap: wrap;
 }
 
 .generator--data_result {
   display: flex;
-  flex: 1;
+  flex: 1 1 auto;
   flex-direction: column;
   align-items: center;
   flex-wrap: wrap;
@@ -300,7 +302,7 @@ header {
 
 .generator--data_code {
   display: flex;
-  flex: 1;
+  flex: 1 1 auto;
   flex-direction: column;
   align-items: center;
   justify-content: center;
