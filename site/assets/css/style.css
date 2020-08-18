@@ -492,6 +492,10 @@ header {
     width: 100%;
     padding: 0px 0px 0px 0px;
   }
+  .section--div {
+    width: 100%;
+    padding: 0px 0px 0px 0px;
+  }
   .about--thanks {
     margin-left: 0px;
     margin-right: 0px !important;
