@@ -275,7 +275,7 @@ header {
   bottom: 0;
   left: 0;
   z-index: -1;
-  margin: -7px;
+  margin: -5px;
   border-radius: inherit;
   background: -webkit-gradient(
     linear,
@@ -540,7 +540,7 @@ header {
   bottom: 0;
   left: 0;
   z-index: -1;
-  margin: -7px;
+  margin: -5px;
   border-radius: inherit;
   background: -webkit-gradient(
     linear,
