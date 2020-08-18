@@ -262,6 +262,9 @@ header {
   section {
     padding: 30px 20px 30px 40px;
   }
+  header {
+    padding-left: 50px !important;
+  }
   .gradient-box {
     width: 100%;
   }
@@ -332,6 +335,15 @@ header {
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .generator--data_sizes-radius {
+    width: 90% !important;
+  }
+  .generator--data_sizes-width {
+    width: 90% !important;
+  }
 }
 
 .generator--data_sizes-width {
