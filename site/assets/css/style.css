@@ -90,6 +90,10 @@ section {
   padding: 60px 100px 60px 100px;
 }
 
+.section--div {
+  padding: 0px 0px 0px 140px;
+}
+
 input[type="text"] {
   background-color: transparent;
   width: 45px;
