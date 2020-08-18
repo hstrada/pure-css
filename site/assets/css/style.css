@@ -198,6 +198,12 @@ header {
   display: block;
 }
 
+@media only screen and (max-width: 768px) {
+  .header--menu {
+    display: none;
+  }
+}
+
 .header--menu ul {
   display: flex;
 }
@@ -246,6 +252,15 @@ header {
   border-radius: 10px 40px 40px 40px;
   text-align: center;
   padding: 30px 40px 30px 40px;
+}
+
+@media only screen and (max-width: 620px) {
+  section {
+    padding: 30px 20px 30px 40px;
+  }
+  .gradient-box {
+    width: 100%;
+  }
 }
 
 .gradient-box:before {
@@ -302,7 +317,6 @@ header {
 
 .generator--data_code {
   display: flex;
-  flex: 1 1 auto;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -472,10 +486,11 @@ header {
 @media only screen and (max-width: 1024px) {
   .about--text {
     width: 100%;
+    padding: 0px 0px 0px 0px;
   }
   .about--thanks {
-    margin-left: 140px;
-    margin-right: 0px;
+    margin-left: 0px;
+    margin-right: 0px !important;
   }
 }
 
