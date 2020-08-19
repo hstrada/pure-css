@@ -1,10 +1,10 @@
 (en = {
   "header": {
     "menu": {
-      "properties" : "properties",
-      "about" : "about"
+      "properties" : "properties 2",
+      "about" : "about 2"
     },
-    "description" : "description"
+    "description" : "description 2"
   },
   "title" : "generator"
 })
