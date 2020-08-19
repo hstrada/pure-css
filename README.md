@@ -12,6 +12,7 @@
 - 👨‍💻️ [Technologies Used](#%EF%B8%8F-technologies-used)
 - 📦️ [How to install the project](#%EF%B8%8F-how-to-install-the-project)
 - 🤔️ [How can you contribute?](#%EF%B8%8F-how-can-you-contribute)
+- [Tasks](#tasks)
  
 ## :rocket: Project Summary
 
@@ -67,8 +68,6 @@ To clone the project, use the commands bellow:
    - `$ git commit -m "feature: My new feature"`
 3. Submit your branch:
    - `$ git push origin my_feature`
-
----
 
 ---
  
