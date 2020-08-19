@@ -90,6 +90,10 @@ section {
   padding: 60px 100px 60px 100px;
 }
 
+span a {
+  text-decoration: none;
+}
+
 .section--div {
   padding: 0px 0px 0px 140px;
 }
@@ -580,7 +584,7 @@ header {
   color: var(--primary-color);
 }
 
-.about--thanks p span:last-child {
+.about--thanks p span:last-child a {
   color: var(--secondary-color);
 }
 
