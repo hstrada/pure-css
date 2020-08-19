@@ -78,8 +78,10 @@ To clone the project, use the commands bellow:
 - [x] Create border-style
 - [x] Create border-radius
 - [x] Create border-color
+- [x] Responsive CSS
 - [ ] Add color picker to border-color
 - [ ] Add translation to en
+- [ ] Refactor observer
 
 ---
  
