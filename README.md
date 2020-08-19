@@ -69,6 +69,20 @@ To clone the project, use the commands bellow:
    - `$ git push origin my_feature`
 
 ---
+
+---
+ 
+## Tasks
+
+- [x] Create main structure
+- [x] Create border-width
+- [x] Create border-style
+- [x] Create border-radius
+- [x] Create border-color
+- [ ] Add color picker to border-color
+- [ ] Add translation to en
+
+---
  
 <h4 align="center">
   Made with :yellow_heart: by <a href="https://www.linkedin.com/in/mathpsantos/">Matheus</a> and <a href="https://www.linkedin.com/in/helenastrada/">Helena</a>! 
